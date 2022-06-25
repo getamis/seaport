@@ -31,7 +31,7 @@ var (
 // FulfillmentApplierMetaData contains all meta data concerning the FulfillmentApplier contract.
 var FulfillmentApplierMetaData = &bind.MetaData{
 	ABI: "[{\"inputs\":[],\"name\":\"InvalidFulfillmentComponentData\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"MismatchedFulfillmentOfferAndConsiderationComponents\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"enumSide\",\"name\":\"side\",\"type\":\"uint8\"}],\"name\":\"MissingFulfillmentComponentOnAggregation\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"OfferAndConsiderationRequiredOnFulfillment\",\"type\":\"error\"}]",
-	Bin: "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea264697066735822122062f86610b6caf36ac04ae0f3ef0d83aff862700674282845166023f6fcce1a0564736f6c634300080d0033",
+	Bin: "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212204f64a4ea0c0428c087ff932ec81de00792621cd2104f1d2845394aca9ed6836064736f6c634300080d0033",
 }
 
 // FulfillmentApplierABI is the input ABI used to generate the binding from.

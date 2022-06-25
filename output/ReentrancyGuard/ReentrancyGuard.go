@@ -31,7 +31,7 @@ var (
 // ReentrancyGuardMetaData contains all meta data concerning the ReentrancyGuard contract.
 var ReentrancyGuardMetaData = &bind.MetaData{
 	ABI: "[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"NoReentrantCalls\",\"type\":\"error\"}]",
-	Bin: "0x6080604052348015600f57600080fd5b506001600055603f8060226000396000f3fe6080604052600080fdfea2646970667358221220a459f76dbfdf518b5e5589fb7b656ecccd1f7118c9047c6d98880a0001d1f60664736f6c634300080d0033",
+	Bin: "0x6080604052348015600f57600080fd5b506001600055603f8060226000396000f3fe6080604052600080fdfea26469706673582212208839bd034e30ace423e7c12c97937cf92da04d8f7568faacb370475070c5470f64736f6c634300080d0033",
 }
 
 // ReentrancyGuardABI is the input ABI used to generate the binding from.

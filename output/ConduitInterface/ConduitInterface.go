@@ -49,7 +49,7 @@ type ConduitTransfer struct {
 
 // ConduitInterfaceMetaData contains all meta data concerning the ConduitInterface contract.
 var ConduitInterfaceMetaData = &bind.MetaData{
-	ABI: "[{\"inputs\":[],\"name\":\"ChannelClosed\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"Invalid1155BatchTransferEncoding\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"InvalidController\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"InvalidItemType\",\"type\":\"error\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"channel\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"open\",\"type\":\"bool\"}],\"name\":\"ChannelUpdated\",\"type\":\"event\"},{\"inputs\":[{\"components\":[{\"internalType\":\"enumConduitItemType\",\"name\":\"itemType\",\"type\":\"uint8\"},{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"identifier\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"internalType\":\"structConduitTransfer[]\",\"name\":\"transfers\",\"type\":\"tuple[]\"}],\"name\":\"execute\",\"outputs\":[{\"internalType\":\"bytes4\",\"name\":\"magicValue\",\"type\":\"bytes4\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256[]\",\"name\":\"ids\",\"type\":\"uint256[]\"},{\"internalType\":\"uint256[]\",\"name\":\"amounts\",\"type\":\"uint256[]\"}],\"internalType\":\"structConduitBatch1155Transfer[]\",\"name\":\"batch1155Transfers\",\"type\":\"tuple[]\"}],\"name\":\"executeBatch1155\",\"outputs\":[{\"internalType\":\"bytes4\",\"name\":\"magicValue\",\"type\":\"bytes4\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"enumConduitItemType\",\"name\":\"itemType\",\"type\":\"uint8\"},{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"identifier\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"internalType\":\"structConduitTransfer[]\",\"name\":\"standardTransfers\",\"type\":\"tuple[]\"},{\"components\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256[]\",\"name\":\"ids\",\"type\":\"uint256[]\"},{\"internalType\":\"uint256[]\",\"name\":\"amounts\",\"type\":\"uint256[]\"}],\"internalType\":\"structConduitBatch1155Transfer[]\",\"name\":\"batch1155Transfers\",\"type\":\"tuple[]\"}],\"name\":\"executeWithBatch1155\",\"outputs\":[{\"internalType\":\"bytes4\",\"name\":\"magicValue\",\"type\":\"bytes4\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"channel\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"isOpen\",\"type\":\"bool\"}],\"name\":\"updateChannel\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}]",
+	ABI: "[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"channel\",\"type\":\"address\"}],\"name\":\"ChannelClosed\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"channel\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"isOpen\",\"type\":\"bool\"}],\"name\":\"ChannelStatusAlreadySet\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"InvalidController\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"InvalidItemType\",\"type\":\"error\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"channel\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"open\",\"type\":\"bool\"}],\"name\":\"ChannelUpdated\",\"type\":\"event\"},{\"inputs\":[{\"components\":[{\"internalType\":\"enumConduitItemType\",\"name\":\"itemType\",\"type\":\"uint8\"},{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"identifier\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"internalType\":\"structConduitTransfer[]\",\"name\":\"transfers\",\"type\":\"tuple[]\"}],\"name\":\"execute\",\"outputs\":[{\"internalType\":\"bytes4\",\"name\":\"magicValue\",\"type\":\"bytes4\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256[]\",\"name\":\"ids\",\"type\":\"uint256[]\"},{\"internalType\":\"uint256[]\",\"name\":\"amounts\",\"type\":\"uint256[]\"}],\"internalType\":\"structConduitBatch1155Transfer[]\",\"name\":\"batch1155Transfers\",\"type\":\"tuple[]\"}],\"name\":\"executeBatch1155\",\"outputs\":[{\"internalType\":\"bytes4\",\"name\":\"magicValue\",\"type\":\"bytes4\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"enumConduitItemType\",\"name\":\"itemType\",\"type\":\"uint8\"},{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"identifier\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"internalType\":\"structConduitTransfer[]\",\"name\":\"standardTransfers\",\"type\":\"tuple[]\"},{\"components\":[{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256[]\",\"name\":\"ids\",\"type\":\"uint256[]\"},{\"internalType\":\"uint256[]\",\"name\":\"amounts\",\"type\":\"uint256[]\"}],\"internalType\":\"structConduitBatch1155Transfer[]\",\"name\":\"batch1155Transfers\",\"type\":\"tuple[]\"}],\"name\":\"executeWithBatch1155\",\"outputs\":[{\"internalType\":\"bytes4\",\"name\":\"magicValue\",\"type\":\"bytes4\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"channel\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"isOpen\",\"type\":\"bool\"}],\"name\":\"updateChannel\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}]",
 }
 
 // ConduitInterfaceABI is the input ABI used to generate the binding from.
@@ -358,10 +358,15 @@ type ConduitInterfaceChannelUpdated struct {
 
 // FilterChannelUpdated is a free log retrieval operation binding the contract event 0xae63067d43ac07563b7eb8db6595635fc77f1578a2a5ea06ba91b63e2afa37e2.
 //
-// Solidity: event ChannelUpdated(address channel, bool open)
-func (_ConduitInterface *ConduitInterfaceFilterer) FilterChannelUpdated(opts *bind.FilterOpts) (*ConduitInterfaceChannelUpdatedIterator, error) {
+// Solidity: event ChannelUpdated(address indexed channel, bool open)
+func (_ConduitInterface *ConduitInterfaceFilterer) FilterChannelUpdated(opts *bind.FilterOpts, channel []common.Address) (*ConduitInterfaceChannelUpdatedIterator, error) {
 
-	logs, sub, err := _ConduitInterface.contract.FilterLogs(opts, "ChannelUpdated")
+	var channelRule []interface{}
+	for _, channelItem := range channel {
+		channelRule = append(channelRule, channelItem)
+	}
+
+	logs, sub, err := _ConduitInterface.contract.FilterLogs(opts, "ChannelUpdated", channelRule)
 	if err != nil {
 		return nil, err
 	}
@@ -370,10 +375,15 @@ func (_ConduitInterface *ConduitInterfaceFilterer) FilterChannelUpdated(opts *bi
 
 // WatchChannelUpdated is a free log subscription operation binding the contract event 0xae63067d43ac07563b7eb8db6595635fc77f1578a2a5ea06ba91b63e2afa37e2.
 //
-// Solidity: event ChannelUpdated(address channel, bool open)
-func (_ConduitInterface *ConduitInterfaceFilterer) WatchChannelUpdated(opts *bind.WatchOpts, sink chan<- *ConduitInterfaceChannelUpdated) (event.Subscription, error) {
+// Solidity: event ChannelUpdated(address indexed channel, bool open)
+func (_ConduitInterface *ConduitInterfaceFilterer) WatchChannelUpdated(opts *bind.WatchOpts, sink chan<- *ConduitInterfaceChannelUpdated, channel []common.Address) (event.Subscription, error) {
 
-	logs, sub, err := _ConduitInterface.contract.WatchLogs(opts, "ChannelUpdated")
+	var channelRule []interface{}
+	for _, channelItem := range channel {
+		channelRule = append(channelRule, channelItem)
+	}
+
+	logs, sub, err := _ConduitInterface.contract.WatchLogs(opts, "ChannelUpdated", channelRule)
 	if err != nil {
 		return nil, err
 	}
@@ -407,7 +417,7 @@ func (_ConduitInterface *ConduitInterfaceFilterer) WatchChannelUpdated(opts *bin
 
 // ParseChannelUpdated is a log parse operation binding the contract event 0xae63067d43ac07563b7eb8db6595635fc77f1578a2a5ea06ba91b63e2afa37e2.
 //
-// Solidity: event ChannelUpdated(address channel, bool open)
+// Solidity: event ChannelUpdated(address indexed channel, bool open)
 func (_ConduitInterface *ConduitInterfaceFilterer) ParseChannelUpdated(log types.Log) (*ConduitInterfaceChannelUpdated, error) {
 	event := new(ConduitInterfaceChannelUpdated)
 	if err := _ConduitInterface.contract.UnpackLog(event, "ChannelUpdated", log); err != nil {

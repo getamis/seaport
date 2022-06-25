@@ -31,7 +31,7 @@ var (
 // CriteriaResolutionMetaData contains all meta data concerning the CriteriaResolution contract.
 var CriteriaResolutionMetaData = &bind.MetaData{
 	ABI: "[{\"inputs\":[],\"name\":\"ConsiderationCriteriaResolverOutOfRange\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"CriteriaNotEnabledForItem\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"InvalidProof\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"OfferCriteriaResolverOutOfRange\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"OrderCriteriaResolverOutOfRange\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"UnresolvedConsiderationCriteria\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"UnresolvedOfferCriteria\",\"type\":\"error\"}]",
-	Bin: "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220ae770d3aa9009f3e728d019315ba68a30616a31db7489d058a43c5eae86593b364736f6c634300080d0033",
+	Bin: "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea264697066735822122064b55239343c014b01b29bd345188ab53e72c59994a937271fbbcdc25fd0e91d64736f6c634300080d0033",
 }
 
 // CriteriaResolutionABI is the input ABI used to generate the binding from.

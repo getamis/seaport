@@ -47,7 +47,7 @@ type SpentItem struct {
 
 // ConsiderationEventsAndErrorsMetaData contains all meta data concerning the ConsiderationEventsAndErrors contract.
 var ConsiderationEventsAndErrorsMetaData = &bind.MetaData{
-	ABI: "[{\"inputs\":[],\"name\":\"BadFraction\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"orderIndex\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"considerationIndex\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"shortfallAmount\",\"type\":\"uint256\"}],\"name\":\"ConsiderationNotMet\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"EtherTransferGenericFailure\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"InsufficientEtherSupplied\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"InvalidBasicOrderParameterEncoding\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"conduit\",\"type\":\"address\"}],\"name\":\"InvalidCallToConduit\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"InvalidCanceller\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"conduitKey\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"conduit\",\"type\":\"address\"}],\"name\":\"InvalidConduit\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"InvalidMsgValue\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"InvalidTime\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"MissingOriginalConsiderationItems\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"NoSpecifiedOrdersAvailable\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"orderHash\",\"type\":\"bytes32\"}],\"name\":\"OrderAlreadyFilled\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"orderHash\",\"type\":\"bytes32\"}],\"name\":\"OrderIsCancelled\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"orderHash\",\"type\":\"bytes32\"}],\"name\":\"OrderPartiallyFilled\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"PartialFillsNotEnabledForOrder\",\"type\":\"error\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"newNonce\",\"type\":\"uint256\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"offerer\",\"type\":\"address\"}],\"name\":\"NonceIncremented\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"orderHash\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"offerer\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"zone\",\"type\":\"address\"}],\"name\":\"OrderCancelled\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"orderHash\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"offerer\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"zone\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"fulfiller\",\"type\":\"address\"},{\"components\":[{\"internalType\":\"enumItemType\",\"name\":\"itemType\",\"type\":\"uint8\"},{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"identifier\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"indexed\":false,\"internalType\":\"structSpentItem[]\",\"name\":\"offer\",\"type\":\"tuple[]\"},{\"components\":[{\"internalType\":\"enumItemType\",\"name\":\"itemType\",\"type\":\"uint8\"},{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"identifier\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"addresspayable\",\"name\":\"recipient\",\"type\":\"address\"}],\"indexed\":false,\"internalType\":\"structReceivedItem[]\",\"name\":\"consideration\",\"type\":\"tuple[]\"}],\"name\":\"OrderFulfilled\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"orderHash\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"offerer\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"zone\",\"type\":\"address\"}],\"name\":\"OrderValidated\",\"type\":\"event\"}]",
+	ABI: "[{\"inputs\":[],\"name\":\"BadFraction\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"orderIndex\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"considerationIndex\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"shortfallAmount\",\"type\":\"uint256\"}],\"name\":\"ConsiderationNotMet\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"EtherTransferGenericFailure\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"InsufficientEtherSupplied\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"InvalidBasicOrderParameterEncoding\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"conduit\",\"type\":\"address\"}],\"name\":\"InvalidCallToConduit\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"InvalidCanceller\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"conduitKey\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"conduit\",\"type\":\"address\"}],\"name\":\"InvalidConduit\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"InvalidMsgValue\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"InvalidNativeOfferItem\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"InvalidTime\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"MissingOriginalConsiderationItems\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"NoSpecifiedOrdersAvailable\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"orderHash\",\"type\":\"bytes32\"}],\"name\":\"OrderAlreadyFilled\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"orderHash\",\"type\":\"bytes32\"}],\"name\":\"OrderIsCancelled\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"orderHash\",\"type\":\"bytes32\"}],\"name\":\"OrderPartiallyFilled\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"PartialFillsNotEnabledForOrder\",\"type\":\"error\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"newCounter\",\"type\":\"uint256\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"offerer\",\"type\":\"address\"}],\"name\":\"CounterIncremented\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"orderHash\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"offerer\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"zone\",\"type\":\"address\"}],\"name\":\"OrderCancelled\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"orderHash\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"offerer\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"zone\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"components\":[{\"internalType\":\"enumItemType\",\"name\":\"itemType\",\"type\":\"uint8\"},{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"identifier\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"indexed\":false,\"internalType\":\"structSpentItem[]\",\"name\":\"offer\",\"type\":\"tuple[]\"},{\"components\":[{\"internalType\":\"enumItemType\",\"name\":\"itemType\",\"type\":\"uint8\"},{\"internalType\":\"address\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"identifier\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"addresspayable\",\"name\":\"recipient\",\"type\":\"address\"}],\"indexed\":false,\"internalType\":\"structReceivedItem[]\",\"name\":\"consideration\",\"type\":\"tuple[]\"}],\"name\":\"OrderFulfilled\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"bytes32\",\"name\":\"orderHash\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"offerer\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"zone\",\"type\":\"address\"}],\"name\":\"OrderValidated\",\"type\":\"event\"}]",
 }
 
 // ConsiderationEventsAndErrorsABI is the input ABI used to generate the binding from.
@@ -196,9 +196,9 @@ func (_ConsiderationEventsAndErrors *ConsiderationEventsAndErrorsTransactorRaw) 
 	return _ConsiderationEventsAndErrors.Contract.contract.Transact(opts, method, params...)
 }
 
-// ConsiderationEventsAndErrorsNonceIncrementedIterator is returned from FilterNonceIncremented and is used to iterate over the raw logs and unpacked data for NonceIncremented events raised by the ConsiderationEventsAndErrors contract.
-type ConsiderationEventsAndErrorsNonceIncrementedIterator struct {
-	Event *ConsiderationEventsAndErrorsNonceIncremented // Event containing the contract specifics and raw log
+// ConsiderationEventsAndErrorsCounterIncrementedIterator is returned from FilterCounterIncremented and is used to iterate over the raw logs and unpacked data for CounterIncremented events raised by the ConsiderationEventsAndErrors contract.
+type ConsiderationEventsAndErrorsCounterIncrementedIterator struct {
+	Event *ConsiderationEventsAndErrorsCounterIncremented // Event containing the contract specifics and raw log
 
 	contract *bind.BoundContract // Generic contract to use for unpacking event data
 	event    string              // Event name to use for unpacking event data
@@ -212,7 +212,7 @@ type ConsiderationEventsAndErrorsNonceIncrementedIterator struct {
 // Next advances the iterator to the subsequent event, returning whether there
 // are any more events found. In case of a retrieval or parsing error, false is
 // returned and Error() can be queried for the exact failure.
-func (it *ConsiderationEventsAndErrorsNonceIncrementedIterator) Next() bool {
+func (it *ConsiderationEventsAndErrorsCounterIncrementedIterator) Next() bool {
 	// If the iterator failed, stop iterating
 	if it.fail != nil {
 		return false
@@ -221,7 +221,7 @@ func (it *ConsiderationEventsAndErrorsNonceIncrementedIterator) Next() bool {
 	if it.done {
 		select {
 		case log := <-it.logs:
-			it.Event = new(ConsiderationEventsAndErrorsNonceIncremented)
+			it.Event = new(ConsiderationEventsAndErrorsCounterIncremented)
 			if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
 				it.fail = err
 				return false
@@ -236,7 +236,7 @@ func (it *ConsiderationEventsAndErrorsNonceIncrementedIterator) Next() bool {
 	// Iterator still in progress, wait for either a data or an error event
 	select {
 	case log := <-it.logs:
-		it.Event = new(ConsiderationEventsAndErrorsNonceIncremented)
+		it.Event = new(ConsiderationEventsAndErrorsCounterIncremented)
 		if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
 			it.fail = err
 			return false
@@ -252,52 +252,52 @@ func (it *ConsiderationEventsAndErrorsNonceIncrementedIterator) Next() bool {
 }
 
 // Error returns any retrieval or parsing error occurred during filtering.
-func (it *ConsiderationEventsAndErrorsNonceIncrementedIterator) Error() error {
+func (it *ConsiderationEventsAndErrorsCounterIncrementedIterator) Error() error {
 	return it.fail
 }
 
 // Close terminates the iteration process, releasing any pending underlying
 // resources.
-func (it *ConsiderationEventsAndErrorsNonceIncrementedIterator) Close() error {
+func (it *ConsiderationEventsAndErrorsCounterIncrementedIterator) Close() error {
 	it.sub.Unsubscribe()
 	return nil
 }
 
-// ConsiderationEventsAndErrorsNonceIncremented represents a NonceIncremented event raised by the ConsiderationEventsAndErrors contract.
-type ConsiderationEventsAndErrorsNonceIncremented struct {
-	NewNonce *big.Int
-	Offerer  common.Address
-	Raw      types.Log // Blockchain specific contextual infos
+// ConsiderationEventsAndErrorsCounterIncremented represents a CounterIncremented event raised by the ConsiderationEventsAndErrors contract.
+type ConsiderationEventsAndErrorsCounterIncremented struct {
+	NewCounter *big.Int
+	Offerer    common.Address
+	Raw        types.Log // Blockchain specific contextual infos
 }
 
-// FilterNonceIncremented is a free log retrieval operation binding the contract event 0x7ab0fc7de8910a6100b24df423c3d0835534506dca9473d30c3e7df51241b2cf.
+// FilterCounterIncremented is a free log retrieval operation binding the contract event 0x721c20121297512b72821b97f5326877ea8ecf4bb9948fea5bfcb6453074d37f.
 //
-// Solidity: event NonceIncremented(uint256 newNonce, address indexed offerer)
-func (_ConsiderationEventsAndErrors *ConsiderationEventsAndErrorsFilterer) FilterNonceIncremented(opts *bind.FilterOpts, offerer []common.Address) (*ConsiderationEventsAndErrorsNonceIncrementedIterator, error) {
+// Solidity: event CounterIncremented(uint256 newCounter, address indexed offerer)
+func (_ConsiderationEventsAndErrors *ConsiderationEventsAndErrorsFilterer) FilterCounterIncremented(opts *bind.FilterOpts, offerer []common.Address) (*ConsiderationEventsAndErrorsCounterIncrementedIterator, error) {
 
 	var offererRule []interface{}
 	for _, offererItem := range offerer {
 		offererRule = append(offererRule, offererItem)
 	}
 
-	logs, sub, err := _ConsiderationEventsAndErrors.contract.FilterLogs(opts, "NonceIncremented", offererRule)
+	logs, sub, err := _ConsiderationEventsAndErrors.contract.FilterLogs(opts, "CounterIncremented", offererRule)
 	if err != nil {
 		return nil, err
 	}
-	return &ConsiderationEventsAndErrorsNonceIncrementedIterator{contract: _ConsiderationEventsAndErrors.contract, event: "NonceIncremented", logs: logs, sub: sub}, nil
+	return &ConsiderationEventsAndErrorsCounterIncrementedIterator{contract: _ConsiderationEventsAndErrors.contract, event: "CounterIncremented", logs: logs, sub: sub}, nil
 }
 
-// WatchNonceIncremented is a free log subscription operation binding the contract event 0x7ab0fc7de8910a6100b24df423c3d0835534506dca9473d30c3e7df51241b2cf.
+// WatchCounterIncremented is a free log subscription operation binding the contract event 0x721c20121297512b72821b97f5326877ea8ecf4bb9948fea5bfcb6453074d37f.
 //
-// Solidity: event NonceIncremented(uint256 newNonce, address indexed offerer)
-func (_ConsiderationEventsAndErrors *ConsiderationEventsAndErrorsFilterer) WatchNonceIncremented(opts *bind.WatchOpts, sink chan<- *ConsiderationEventsAndErrorsNonceIncremented, offerer []common.Address) (event.Subscription, error) {
+// Solidity: event CounterIncremented(uint256 newCounter, address indexed offerer)
+func (_ConsiderationEventsAndErrors *ConsiderationEventsAndErrorsFilterer) WatchCounterIncremented(opts *bind.WatchOpts, sink chan<- *ConsiderationEventsAndErrorsCounterIncremented, offerer []common.Address) (event.Subscription, error) {
 
 	var offererRule []interface{}
 	for _, offererItem := range offerer {
 		offererRule = append(offererRule, offererItem)
 	}
 
-	logs, sub, err := _ConsiderationEventsAndErrors.contract.WatchLogs(opts, "NonceIncremented", offererRule)
+	logs, sub, err := _ConsiderationEventsAndErrors.contract.WatchLogs(opts, "CounterIncremented", offererRule)
 	if err != nil {
 		return nil, err
 	}
@@ -307,8 +307,8 @@ func (_ConsiderationEventsAndErrors *ConsiderationEventsAndErrorsFilterer) Watch
 			select {
 			case log := <-logs:
 				// New log arrived, parse the event and forward to the user
-				event := new(ConsiderationEventsAndErrorsNonceIncremented)
-				if err := _ConsiderationEventsAndErrors.contract.UnpackLog(event, "NonceIncremented", log); err != nil {
+				event := new(ConsiderationEventsAndErrorsCounterIncremented)
+				if err := _ConsiderationEventsAndErrors.contract.UnpackLog(event, "CounterIncremented", log); err != nil {
 					return err
 				}
 				event.Raw = log
@@ -329,12 +329,12 @@ func (_ConsiderationEventsAndErrors *ConsiderationEventsAndErrorsFilterer) Watch
 	}), nil
 }
 
-// ParseNonceIncremented is a log parse operation binding the contract event 0x7ab0fc7de8910a6100b24df423c3d0835534506dca9473d30c3e7df51241b2cf.
+// ParseCounterIncremented is a log parse operation binding the contract event 0x721c20121297512b72821b97f5326877ea8ecf4bb9948fea5bfcb6453074d37f.
 //
-// Solidity: event NonceIncremented(uint256 newNonce, address indexed offerer)
-func (_ConsiderationEventsAndErrors *ConsiderationEventsAndErrorsFilterer) ParseNonceIncremented(log types.Log) (*ConsiderationEventsAndErrorsNonceIncremented, error) {
-	event := new(ConsiderationEventsAndErrorsNonceIncremented)
-	if err := _ConsiderationEventsAndErrors.contract.UnpackLog(event, "NonceIncremented", log); err != nil {
+// Solidity: event CounterIncremented(uint256 newCounter, address indexed offerer)
+func (_ConsiderationEventsAndErrors *ConsiderationEventsAndErrorsFilterer) ParseCounterIncremented(log types.Log) (*ConsiderationEventsAndErrorsCounterIncremented, error) {
+	event := new(ConsiderationEventsAndErrorsCounterIncremented)
+	if err := _ConsiderationEventsAndErrors.contract.UnpackLog(event, "CounterIncremented", log); err != nil {
 		return nil, err
 	}
 	event.Raw = log
@@ -567,7 +567,7 @@ type ConsiderationEventsAndErrorsOrderFulfilled struct {
 	OrderHash     [32]byte
 	Offerer       common.Address
 	Zone          common.Address
-	Fulfiller     common.Address
+	Recipient     common.Address
 	Offer         []SpentItem
 	Consideration []ReceivedItem
 	Raw           types.Log // Blockchain specific contextual infos
@@ -575,7 +575,7 @@ type ConsiderationEventsAndErrorsOrderFulfilled struct {
 
 // FilterOrderFulfilled is a free log retrieval operation binding the contract event 0x9d9af8e38d66c62e2c12f0225249fd9d721c54b83f48d9352c97c6cacdcb6f31.
 //
-// Solidity: event OrderFulfilled(bytes32 orderHash, address indexed offerer, address indexed zone, address fulfiller, (uint8,address,uint256,uint256)[] offer, (uint8,address,uint256,uint256,address)[] consideration)
+// Solidity: event OrderFulfilled(bytes32 orderHash, address indexed offerer, address indexed zone, address recipient, (uint8,address,uint256,uint256)[] offer, (uint8,address,uint256,uint256,address)[] consideration)
 func (_ConsiderationEventsAndErrors *ConsiderationEventsAndErrorsFilterer) FilterOrderFulfilled(opts *bind.FilterOpts, offerer []common.Address, zone []common.Address) (*ConsiderationEventsAndErrorsOrderFulfilledIterator, error) {
 
 	var offererRule []interface{}
@@ -596,7 +596,7 @@ func (_ConsiderationEventsAndErrors *ConsiderationEventsAndErrorsFilterer) Filte
 
 // WatchOrderFulfilled is a free log subscription operation binding the contract event 0x9d9af8e38d66c62e2c12f0225249fd9d721c54b83f48d9352c97c6cacdcb6f31.
 //
-// Solidity: event OrderFulfilled(bytes32 orderHash, address indexed offerer, address indexed zone, address fulfiller, (uint8,address,uint256,uint256)[] offer, (uint8,address,uint256,uint256,address)[] consideration)
+// Solidity: event OrderFulfilled(bytes32 orderHash, address indexed offerer, address indexed zone, address recipient, (uint8,address,uint256,uint256)[] offer, (uint8,address,uint256,uint256,address)[] consideration)
 func (_ConsiderationEventsAndErrors *ConsiderationEventsAndErrorsFilterer) WatchOrderFulfilled(opts *bind.WatchOpts, sink chan<- *ConsiderationEventsAndErrorsOrderFulfilled, offerer []common.Address, zone []common.Address) (event.Subscription, error) {
 
 	var offererRule []interface{}
@@ -642,7 +642,7 @@ func (_ConsiderationEventsAndErrors *ConsiderationEventsAndErrorsFilterer) Watch
 
 // ParseOrderFulfilled is a log parse operation binding the contract event 0x9d9af8e38d66c62e2c12f0225249fd9d721c54b83f48d9352c97c6cacdcb6f31.
 //
-// Solidity: event OrderFulfilled(bytes32 orderHash, address indexed offerer, address indexed zone, address fulfiller, (uint8,address,uint256,uint256)[] offer, (uint8,address,uint256,uint256,address)[] consideration)
+// Solidity: event OrderFulfilled(bytes32 orderHash, address indexed offerer, address indexed zone, address recipient, (uint8,address,uint256,uint256)[] offer, (uint8,address,uint256,uint256,address)[] consideration)
 func (_ConsiderationEventsAndErrors *ConsiderationEventsAndErrorsFilterer) ParseOrderFulfilled(log types.Log) (*ConsiderationEventsAndErrorsOrderFulfilled, error) {
 	event := new(ConsiderationEventsAndErrorsOrderFulfilled)
 	if err := _ConsiderationEventsAndErrors.contract.UnpackLog(event, "OrderFulfilled", log); err != nil {
